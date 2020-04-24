@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+body {
+  background-color: #e2e2e21c;
+  font-family: "Cairo", sans-serif; }
+
+.navbar {
+  background-color: #ffc733;
+  box-shadow: 0px 3px 12px 1px rgba(166, 166, 166, 0.45); }
+  .navbar img {
+    margin: auto;
+    width: 80px; }
+
+.login {
+  text-align: center;
+  margin: 5% 22%; }
+  .login form {
+    text-align: right;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 34px; }
+    .login form .header {
+      text-align: center;
+      margin-bottom: 7%;
+      color: #181818;
+      font-size: 20px; }
+      .login form .header i {
+        font-size: 30px; }
+      .login form .header span {
+        font-weight: 600; }
+    .login form .form-group label {
+      font-weight: 600;
+      margin-bottom: 20px; }
+    .login form .form-group .form-control {
+      height: calc(1.5em + .75rem + 11px);
+      transition: all 0.3s ease-in-out; }
+      .login form .form-group .form-control:hover {
+        box-shadow: 0px 0px 4px 2px #ffc733; }
+    .login form a {
+      text-decoration: none; }
+    .login form button {
+      background-color: #000000;
+      color: #ffffff;
+      width: 50%;
+      padding: 10px;
+      font-size: 20px;
+      border: 1px solid transparent;
+      border-radius: 30px;
+      transition: all 0.3s ease-in-out; }
+      .login form button:hover {
+        box-shadow: 0px 3px 12px 1px rgba(166, 166, 166, 0.45); }
+
+.footer {
+  background-color: #181818;
+  color: #ffffff; }
+  .footer span img {
+    width: 8%; }
+  .footer .col-md-6 {
+    line-height: 3; }
+  .footer .col-md-6:nth-child(1) {
+    text-align: right; }
+  .footer .col-md-6:nth-child(2) {
+    text-align: left; }
+
+.layout .container-fluid {
+  padding-right: 0px; }
+  .layout .container-fluid .sidebar {
+    height: 100%;
+    position: fixed;
+    overflow: scroll;
+    color: #000;
+    width: auto;
+    right: 0;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: -4px 0px 11px 1px rgba(166, 166, 166, 0.45); }
+    .layout .container-fluid .sidebar header {
+      text-align: center;
+      margin-bottom: 25px; }
+      .layout .container-fluid .sidebar header img {
+        width: 40%; }
+    .layout .container-fluid .sidebar span {
+      font-size: 20px -5;
+      font-weight: 600;
+      background-color: #e2e2e21c;
+      border-radius: 25px;
+      padding: 8px 13px;
+      margin-bottom: 20px;
+      display: block;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out; }
+      .layout .container-fluid .sidebar span .active {
+        color: #ffc733; }
+      .layout .container-fluid .sidebar span i {
+        font-size: 20px;
+        color: #ffc733;
+        float: left;
+        line-height: 1.5;
+        transition: all 0.3s ease-in-out; }
+    .layout .container-fluid .sidebar ul {
+      list-style: none;
+      text-align: right;
+      padding: 5px;
+      margin-top: 15px; }
+      .layout .container-fluid .sidebar ul .active {
+        background-color: #ffc733; }
+      .layout .container-fluid .sidebar ul .list1 {
+        display: none; }
+      .layout .container-fluid .sidebar ul .list2 {
+        display: none; }
+      .layout .container-fluid .sidebar ul .list3 {
+        display: none; }
+      .layout .container-fluid .sidebar ul .list4 {
+        display: none; }
+      .layout .container-fluid .sidebar ul li {
+        margin-bottom: 30px;
+        padding: 10px;
+        border-radius: 20px;
+        transition: all 0.3s ease-in-out; }
+        .layout .container-fluid .sidebar ul li:hover {
+          background-color: #ffc733; }
+        .layout .container-fluid .sidebar ul li a {
+          color: #000000;
+          font-weight: 600;
+          text-decoration: none; }
+        .layout .container-fluid .sidebar ul li i {
+          color: #000000;
+          font-size: 13px;
+          margin-left: 10px; }
+.layout .content-aria {
+  min-height: 100%;
+  width: 100%;
+  will-change: width; }
+  .layout .content-aria .Dnavbar {
+    background-color: transparent;
+    box-shadow: -2px 1px 7px 1px rgba(166, 166, 166, 0.45); }
+    .layout .content-aria .Dnavbar .user {
+      padding: 10px; }
+      .layout .content-aria .Dnavbar .user i {
+        color: #ffc733;
+        font-size: 20px;
+        float: left;
+        margin-top: 1%;
+        margin-left: 1%;
+        transition: all 0.3s ease-in-out; }
+        .layout .content-aria .Dnavbar .user i:hover {
+          position: relative;
+          bottom: 2px; }
+      .layout .content-aria .Dnavbar .user img {
+        width: 4%;
+        height: 45px;
+        border-radius: 50%;
+        border: 1px solid #ffc733;
+        cursor: pointer;
+        margin-left: 10px; }
+  .layout .content-aria .user-management .add-superuser {
+    color: #ffffff;
+    background-color: green;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out; }
+    .layout .content-aria .user-management .add-superuser:hover {
+      background-color: darkgreen; }
+  .layout .content-aria .user-management table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative; }
+    .layout .content-aria .user-management table tr {
+      font-weight: 600;
+      box-shadow: -2px 1px 7px 1px rgba(166, 166, 166, 0.45); }
+    .layout .content-aria .user-management table .buttons a {
+      text-decoration: none; }
+      .layout .content-aria .user-management table .buttons a i {
+        font-size: 20px; }
+      .layout .content-aria .user-management table .buttons a .fa-edit {
+        color: green; }
+      .layout .content-aria .user-management table .buttons a .fa-trash {
+        color: red; }
+  .layout .content-aria .user-permition {
+    margin-top: 20px; }
+    .layout .content-aria .user-permition .card {
+      border: 1px solid transparent;
+      margin-bottom: 20px;
+      box-shadow: 0px 3px 12px 1px rgba(166, 166, 166, 0.45); }
+      .layout .content-aria .user-permition .card .card-body img {
+        width: 100%; }
+      .layout .content-aria .user-permition .card .card-body ul {
+        list-style: none;
+        font-weight: 600; }
+        .layout .content-aria .user-permition .card .card-body ul li {
+          margin-bottom: 10px; }
+      .layout .content-aria .user-permition .card .card-body button {
+        background-color: green;
+        color: #ffffff;
+        font-size: 20px;
+        width: 100%;
+        padding: 5px;
+        border-radius: 30px;
+        border: 1px solid transparent;
+        box-shadow: 0px 3px 12px 1px rgba(166, 166, 166, 0.45);
+        transition: all 0.3s ease-in-out; }
+        .layout .content-aria .user-permition .card .card-body button:hover {
+          background-color: darkgreen; }
+  .layout .content-aria .section-managment {
+    margin-top: 50px; }
+    .layout .content-aria .section-managment .card {
+      border: 1px solid transparent;
+      border-radius: 0px 35px 0px 35px;
+      box-shadow: 0px 3px 12px 1px rgba(166, 166, 166, 0.45);
+      text-align: center;
+      margin-bottom: 20px; }
+      .layout .content-aria .section-managment .card .card-header {
+        background-color: #bf9423;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 0px 35px 0px 0px; }
+      .layout .content-aria .section-managment .card .card-footer {
+        background-color: #ffffff;
+        border-top: none;
+        border-radius: 35px; }
+        .layout .content-aria .section-managment .card .card-footer button {
+          width: 90%;
+          background-color: green;
+          color: #FFFF;
+          padding: 5px;
+          border: 1px solid green;
+          border-radius: 0px 30px 0px 30px;
+          font-size: 20px;
+          font-weight: 400; }
+    .layout .content-aria .section-managment a {
+      text-decoration: none;
+      color: #bf9423; }
+      .layout .content-aria .section-managment a .card-market {
+        box-shadow: 0px 3px 12px 1px rgba(166, 166, 166, 0.45);
+        border-radius: 0px 35px 0px 35px;
+        margin-bottom: 30px;
+        transition: all 0.3s ease-in-out; }
+        .layout .content-aria .section-managment a .card-market:hover {
+          box-shadow: 0px 0px 5px 6px rgba(166, 166, 166, 0.45); }
+        .layout .content-aria .section-managment a .card-market .card-body img {
+          width: 120%;
+          border-radius: 0px 30px 0px 30px; }
+        .layout .content-aria .section-managment a .card-market .card-body ul {
+          list-style: none; }
+          .layout .content-aria .section-managment a .card-market .card-body ul li {
+            margin-bottom: 10%; }
+        .layout .content-aria .section-managment a .card-market .card-body .help {
+          width: 100%;
+          margin-top: 15%;
+          text-align: center; }
+          .layout .content-aria .section-managment a .card-market .card-body .help span {
+            font-size: 13px;
+            font-weight: 600; }
+  .layout .content-aria .section-managment-product .add-newProduct {
+    color: #ffffff;
+    background-color: green;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out; }
+  .layout .content-aria .section-managment-product .card-market {
+    width: 50%;
+    margin: auto;
+    box-shadow: 0px 3px 12px 1px rgba(166, 166, 166, 0.45);
+    border-radius: 0px 35px 0px 35px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out; }
+    .layout .content-aria .section-managment-product .card-market .card-body ul {
+      color: #bf9423;
+      margin-top: 20%;
+      list-style: none; }
+    .layout .content-aria .section-managment-product .card-market .card-body img {
+      border-radius: 0px 35px 0px 35px; }
+  .layout .content-aria .section-managment-product .card {
+    box-shadow: 0px 3px 12px 1px rgba(166, 166, 166, 0.45);
+    border-radius: 0px 35px 0px 35px;
+    margin-bottom: 30px; }
+    .layout .content-aria .section-managment-product .card .card-title {
+      font-weight: 600;
+      color: #bf9423; }
+    .layout .content-aria .section-managment-product .card ul {
+      list-style: none;
+      text-align: right;
+      color: #bf9423; }
+      .layout .content-aria .section-managment-product .card ul li {
+        margin-bottom: 20px; }
+        .layout .content-aria .section-managment-product .card ul li input {
+          background-color: #ffffff;
+          border: 1px solid transparent; }
+    .layout .content-aria .section-managment-product .card a {
+      color: #bf9423;
+      text-decoration: none;
+      box-shadow: 0px 3px 12px 1px rgba(166, 166, 166, 0.45);
+      padding: 5px 30px;
+      border-radius: 30px;
+      transition: all 0.3s ease-in-out; }
+      .layout .content-aria .section-managment-product .card a:hover {
+        background-color: #f8f8f8; }
+
+.add-newProduct {
+  margin: 3rem 0rem 7rem; }
+  .add-newProduct h2 {
+    color: #bf9423;
+    font-weight: 600;
+    margin-bottom: 20px; }
+  .add-newProduct form {
+    border-right: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    border-radius: 30px;
+    padding: 23px 0px 40px;
+    width: 65%;
+    margin: auto;
+    box-shadow: 0px 3px 2px 2px rgba(146, 145, 145, 0.45); }
+    .add-newProduct form .form-group label img {
+      display: block;
+      margin: auto;
+      margin-bottom: 20px;
+      width: 50%;
+      cursor: pointer;
+      box-shadow: 0px 5px 6px -1px rgba(146, 145, 145, 0.45);
+      transition: all 0.3s ease-in-out; }
+      .add-newProduct form .form-group label img:hover {
+        width: 49%;
+        margin-bottom: 22px; }
+    .add-newProduct form .form-group label span {
+      color: #bf9423;
+      font-size: 20px; }
+    .add-newProduct form .form-group input[type="file"] {
+      display: none; }
+    .add-newProduct form .form-group .form-control {
+      background-color: #d0cdcd;
+      border-radius: 10px;
+      border: none;
+      width: 65%;
+      height: calc(1.5em + 0.75rem + 15px);
+      margin: auto;
+      margin-bottom: 30px; }
+    .add-newProduct form button {
+      background-color: #ffffff;
+      color: #bf9423;
+      padding: 10px;
+      width: 30%;
+      border: 1px solid #FFFF;
+      border-radius: 10px;
+      margin: 30px 0px;
+      box-shadow: 0px 3px 12px 1px rgba(166, 166, 166, 0.45); }
+
+.layout .content-aria .order-infromation .upper-bar a {
+  text-decoration: none;
+  color: #bf9423;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out; }
+  .layout .content-aria .order-infromation .upper-bar a:hover {
+    border-bottom: 2px solid #bf9423; }
+  .layout .content-aria .order-infromation .upper-bar a .active {
+    border-bottom: 2px solid #bf9423; }
+.layout .content-aria .order-infromation table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative; }
+  .layout .content-aria .order-infromation table tr {
+    font-weight: 600;
+    font-size: 13px;
+    box-shadow: -2px 1px 7px 1px rgba(166, 166, 166, 0.45); }
+    .layout .content-aria .order-infromation table tr .buttons .edit-all {
+      color: red;
+      text-decoration: none;
+      border: 1px solid red;
+      padding: 2px 15px;
+      border-radius: 30px;
+      transition: all 0.3s ease-in-out; }
+      .layout .content-aria .order-infromation table tr .buttons .edit-all:hover {
+        background-color: red;
+        color: #FFFF; }
+    .layout .content-aria .order-infromation table tr .buttons .remove-all {
+      color: green;
+      text-decoration: none;
+      border: 1px solid green;
+      padding: 2px 15px;
+      border-radius: 30px;
+      transition: all 0.3s ease-in-out; }
+      .layout .content-aria .order-infromation table tr .buttons .remove-all:hover {
+        background-color: green;
+        color: #FFFF; }
+    .layout .content-aria .order-infromation table tr .buttons .update-all {
+      color: #bf9423;
+      background-color: #ffffff;
+      text-decoration: none;
+      border: 1px solid #bf9423;
+      padding: 2px 15px;
+      border-radius: 30px;
+      transition: all 0.3s ease-in-out; }
+      .layout .content-aria .order-infromation table tr .buttons .update-all:hover {
+        color: #ffffff;
+        background-color: #bf9423; }
+.layout .content-aria .mapModule h2 {
+  color: #bf9423;
+  box-shadow: 0px 3px 12px 1px rgba(166, 166, 166, 0.45);
+  width: 50%;
+  border-radius: 15px;
+  margin: auto;
+  padding: 5px 0px;
+  margin-bottom: 20px; }
+.layout .content-aria .mapModule #map {
+  height: 500px;
+  width: 100%; }
+.layout .content-aria .systemSettings .orderDownTime h2 {
+  color: #bf9423;
+  border-right: 2px solid #bf9423;
+  padding-right: 10px;
+  margin-bottom: 30px;
+  font-weight: 600; }
+.layout .content-aria .systemSettings .orderDownTime ul {
+  list-style: none; }
+  .layout .content-aria .systemSettings .orderDownTime ul li {
+    margin-bottom: 20px; }
+    .layout .content-aria .systemSettings .orderDownTime ul li button {
+      border: 1px solid transparent;
+      border-radius: 30px;
+      padding: 2px 0px;
+      font-size: 20px;
+      width: 30%;
+      color: #ffffff;
+      box-shadow: 0px 3px 12px 1px rgba(166, 166, 166, 0.45);
+      transition: all 0.3s ease-in-out; }
+      .layout .content-aria .systemSettings .orderDownTime ul li button:hover {
+        box-shadow: 0px 0px 7px 3px rgba(166, 166, 166, 0.45); }
+    .layout .content-aria .systemSettings .orderDownTime ul li:nth-child(1) button {
+      background-color: green; }
+    .layout .content-aria .systemSettings .orderDownTime ul li:nth-child(2) button {
+      background-color: red; }
+    .layout .content-aria .systemSettings .orderDownTime ul li:nth-child(3) button {
+      background-color: #ffffff;
+      color: #bf9423; }
+    .layout .content-aria .systemSettings .orderDownTime ul li:nth-child(4) button {
+      background-color: #ffffff;
+      color: #bf9423; }
+    .layout .content-aria .systemSettings .orderDownTime ul li .duration {
+      background-color: #ffffff;
+      color: #bf9423;
+      width: 30%;
+      padding: 12px 35px;
+      border-radius: 30px;
+      box-shadow: 3px 3px 7px 0px rgba(166, 166, 166, 0.45); }
+      .layout .content-aria .systemSettings .orderDownTime ul li .duration input {
+        border: 1px solid transparent;
+        background-color: #e2e2e21c;
+        cursor: pointer;
+        border-radius: 30px; }
+      .layout .content-aria .systemSettings .orderDownTime ul li .duration span {
+        float: left;
+        font-weight: 600; }
+
+/*# sourceMappingURL=style.css.map */

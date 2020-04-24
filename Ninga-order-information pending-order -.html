@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NINGA</title>
+    <link rel="icon" href="img\LOGO.png" type="image-png">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\fontawesome.min.css">
+    <link rel="stylesheet" href="css\all.min.css">
+    <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body dir="rtl">
+    <div class="layout">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- start sidebar -->
+                    <section class="sidebar">
+                        <header>
+                            <img src="img\LOGO.png" alt="">
+                        </header>
+                        <hr>
+                        <ul>
+                            <span class="tap1">
+                                User management
+                                <i class="fa fa-angle-down i1"></i>
+                            </span>
+                            <div class="list1">
+                                <ul>
+                                    <!-- available for Superusers -->
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Manage Superusers</a>
+                                    </li>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Manage Supervisors</a></li>
+                                </ul>
+                            </div>
+                            <span class="tap2">
+                                Permissions
+                                <i class="fa fa-angle-down i2"></i>
+                            </span>
+                            <div class="list2">
+                                <ul>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">View user permissions</a></li>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Assign permissions to supervisor</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="tap3">
+                                Data Management
+                                <i class="fa fa-angle-down i3"></i>
+                            </span>
+                            <div class="list3">
+                                <ul>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Section Management</a></li>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Product Management</a></li>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Delivery Pilots
+                                            Management</a></li>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Consumer Management</a></li>
+                                </ul>
+                            </div>
+                            <span class="tap4">
+                                Daily statistics
+                                <i class="fa fa-angle-down i4"></i>
+                            </span>
+                            <div class="list4">
+                                <ul>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">PILOTS</a></li>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Orders</a></li>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">New users</a></li>
+                                </ul>
+                            </div>
+                            <li class=" active" style="padding: 0px;">
+                                <span>
+                                    Order management
+                                </span>
+                            </li>
+                            <li style="padding: 0px;">
+                                <span class="tap5">
+                                    Map Module
+                                </span>
+                            </li>
+                            <li style="padding: 0px;">
+                                <span class="tap7">
+                                    System Settings
+                                </span>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- end sidebar -->
+                </div>
+                <div class="col-md-9">
+                    <!-- start contanet ariea -->
+                    <section class="content-aria text-right">
+                        <!-- start dashNavBar -->
+                        <section class="Dnavbar">
+                            <div class="user">
+                                <a href=""> <img src="img\4.jpeg" alt="user-img"></a>
+                                <span class="username">علي عبد الباقي</span>
+                                <a href=""> <i class="fas fa-power-off"></i></a>
+                            </div>
+                        </section>
+                        <hr>
+                        <!-- end dashNavBar -->
+                        <!-- start order-infromation -->
+                        <section class="order-infromation">
+                            <div class="container-fluid">
+                                <section class="upper-bar">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-6 text-right">
+                                                <a href="">
+                                                    <span style="text-transform: uppercase;">own
+                                                        orders</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-6 text-left">
+                                                <a href="">
+                                                    <span class="active" style="text-transform: uppercase;">Pending
+                                                        orders</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div style="font-weight: 600;" class=" mt-4">
+                                </div>
+                                <div>
+                                    <div class="container">
+                                        <div class="row  mb-5">
+                                            <div class="col-md-12">
+                                                <div class="table100" id="DeliveryPilots-list">
+                                                    <table>
+                                                        <tbody>
+                                                            <tr style="background-color: #fec12021">
+                                                                <td class="column-num py-2 ">
+                                                                    #
+                                                                </td>
+                                                                <td class="column8 py-2 ">
+                                                                    <p>id</p>
+                                                                </td>
+                                                                <td class="column8 py-2">
+                                                                    <p> stage</p>
+                                                                </td>
+                                                                <td class="column8 py-2">
+                                                                    <p>amount product</p>
+                                                                </td>
+                                                                <td class="column8 py-2">
+                                                                    <p>
+                                                                        location stop point</p>
+                                                                </td>
+                                                                <td class="column8 py-2">
+                                                                    <p class="text-center"> customer</p>
+                                                                </td>
+                                                                <td class="column8  py-2">
+                                                                    <p>assigned supervisor</p>
+                                                                </td>
+                                                                <td class="column8  py-2">
+                                                                    <p>Assign Pilots</p>
+                                                                </td>
+                                                                <td class="column8  py-2">
+                                                                    <p>Discount</p>
+                                                                </td>
+                                                                <td class="column8  py-2">
+                                                                    <p>extra charge</p>
+                                                                </td>
+                                                                <td class="column8  py-2">
+                                                                    <p>toltal cost</p>
+                                                                </td>
+                                                                <td class="column8  py-2">
+                                                                    <p>Paid amount</p>
+                                                                </td>
+                                                                <td class="column8  py-2">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="column-num py-2 ">
+                                                                    #
+                                                                </td>
+                                                                <td class="column8 py-2 ">
+                                                                    <p>id</p>
+                                                                </td>
+                                                                <td class="column8 py-2">
+                                                                    <p> stage</p>
+                                                                </td>
+                                                                <td class="column8 py-2">
+                                                                    <p>amount product</p>
+                                                                </td>
+                                                                <td class="column8 py-2">
+                                                                    <p>
+                                                                        location stop point</p>
+                                                                </td>
+                                                                <td class="column8 py-2">
+                                                                    <p class="text-center"> customer</p>
+                                                                </td>
+                                                                <td class="column8  py-2">
+                                                                    <p>assigned supervisor</p>
+                                                                </td>
+                                                                <td class="column8  py-2">
+                                                                    <p>Assign Pilots</p>
+                                                                </td>
+                                                                <td class="column8  py-2">
+                                                                    <p>Discount</p>
+                                                                </td>
+                                                                <td class="column8  py-2">
+                                                                    <p>extra charge</p>
+                                                                </td>
+                                                                <td class="column8  py-2">
+                                                                    <p>toltal cost</p>
+                                                                </td>
+                                                                <td class="column8  py-2">
+                                                                    <p>Paid amount</p>
+                                                                </td>
+                                                                <td colspan="2" class="column8  py-2 buttons">
+                                                                    <a href="" class="remove-all px-1 mx-2">
+                                                                        confirm
+                                                                    </a>
+                                                                    <a href="" class="edit-all px-1">
+                                                                        Cancel
+                                                                    </a>
+                                                                    <a href="" class="update-all px-1 ml-1">
+                                                                        update
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <hr>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                </section>
+                <!-- end user management -->
+                </section>
+                <!-- end contanet ariea -->
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Script Files -->
+    <script src="js\jquery-3.4.1.min.js"></script>
+    <script src="js\popper.min.js"></script>
+    <script src="js\bootstrap.min.js"></script>
+    <script src="js\main.js"></script>
+</body>
+
+</html>

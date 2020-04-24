@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NINGA</title>
+    <link rel="icon" href="img\LOGO.png" type="image-png">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\fontawesome.min.css">
+    <link rel="stylesheet" href="css\all.min.css">
+    <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body dir="rtl">
+    <div class="layout">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- start sidebar -->
+                    <section class="sidebar">
+                        <header>
+                            <img src="img\LOGO.png" alt="">
+                        </header>
+                        <hr>
+                        <ul>
+                            <span class="tap1">
+                                User management
+                                <i class="fa fa-angle-up i1"></i>
+                            </span>
+                            <div class="list1" style="display: block; ">
+                                <ul>
+                                    <!-- available for Superusers -->
+                                    <li class="active"><i class="fas fa-arrow-left"></i><a href="">Manage Superusers</a>
+                                    </li>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Manage Supervisors</a></li>
+                                </ul>
+                            </div>
+                            <span class="tap2">
+                                Permissions
+                                <i class="fa fa-angle-down i2"></i>
+                            </span>
+                            <div class="list2">
+                                <ul>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">View user permissions</a></li>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Assign permissions to supervisor</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="tap3">
+                                Data Management
+                                <i class="fa fa-angle-down i3"></i>
+                            </span>
+                            <div class="list3">
+                                <ul>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Section Management</a></li>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Product Management</a></li>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Delivery Pilots Management</a></li>
+                                </ul>
+                            </div>
+                            <span class="tap4">
+                                Daily statistics
+                                <i class="fa fa-angle-down i4"></i>
+                            </span>
+                            <div class="list4">
+                                <ul>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">PILOTS</a></li>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Orders</a></li>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">New users</a></li>
+                                </ul>
+                            </div>
+                            <li style="padding: 0px;">
+                                <span>
+                                    Order management
+                                </span>
+                            </li>
+                            <li style="padding: 0px;">
+                                <span class="tap5">
+                                    Map Module
+                                </span>
+                            </li>
+                            <li style="padding: 0px;">
+                                <span class="tap7">
+                                    System Settings
+                                </span>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- end sidebar -->
+                </div>
+                <div class="col-md-9">
+                    <!-- start contanet ariea -->
+                    <section class="content-aria text-right">
+                        <!-- start dashNavBar -->
+                        <section class="Dnavbar">
+                            <div class="user">
+                                <a href=""> <img src="img\4.jpeg" alt="user-img"></a>
+                                <span class="username">علي عبد الباقي</span>
+                                <a href=""> <i class="fas fa-power-off"></i></a>
+                            </div>
+                        </section>
+                        <hr>
+                        <!-- end dashNavBar -->
+                        <!-- start user management -->
+                        <section class="user-management">
+                            <div class="container-fluid">
+                                <div style="font-weight: 600;" class=" mt-4">
+                                    <div class="clearfix py-3 px-2 mx-3 border-bottom-custom-2 ">
+                                        <div class="w-50 float-right">
+                                            superusers list
+                                        </div>
+                                        <div class="w-50 float-left text-left btn-w">
+                                            <a href="Ninga-add-superuser.html">
+                                                <button class="add-superuser py-2 px-3 text-center" id="add-superuser">
+                                                    <i class="fas fa-plus px-1"></i>
+                                                    اضافه
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="container">
+                                            <div class="row  mb-5">
+                                                <div class="col-md-12">
+                                                    <div class="table100" id="Superusers-list">
+                                                        <table>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td class="column-num py-2 ">
+                                                                        #
+                                                                    </td>
+                                                                    <td class="column8 py-2 ">
+                                                                        <p> الاسم</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p> البريد الاليكتروني</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p>
+                                                                            الحاله </p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p class="text-center"> اخر دخول</p>
+                                                                    </td>
+                                                                    <td class="column8  py-2">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column-num py-2 ">
+                                                                        1
+                                                                    </td>
+                                                                    <td class="column8 py-2 ">
+                                                                        <p id="username">ali</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p id="user-email"> example@example.com</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p id="status">
+                                                                            الحاله </p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p class="text-center"> اخر دخول</p>
+                                                                    </td>
+                                                                    <td class="column8  py-2 buttons">
+                                                                        <a href="" class=" edit-all px-1 mx-2">
+                                                                            <i class="fas fa-edit  "></i>
+                                                                        </a>
+                                                                        <a href="" class="remove-all px-1">
+                                                                            <i class="fas fa-trash "></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column-num py-2 ">
+                                                                        #
+                                                                    </td>
+                                                                    <td class="column8 py-2 ">
+                                                                        <p> الاسم</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p> البريد الاليكتروني</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p>
+                                                                            الحاله </p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p class="text-center"> اخر دخول</p>
+                                                                    </td>
+                                                                    <td class="column8  py-2">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column-num py-2 ">
+                                                                        1
+                                                                    </td>
+                                                                    <td class="column8 py-2 ">
+                                                                        <p id="username">ali</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p id="user-email"> example@example.com</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p id="status">
+                                                                            الحاله </p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p class="text-center"> اخر دخول</p>
+                                                                    </td>
+                                                                    <td class="column8  py-2 buttons">
+                                                                        <a href="" class=" edit-all px-1 mx-2">
+                                                                            <i class="fas fa-edit  "></i>
+                                                                        </a>
+                                                                        <a href="" class="remove-all px-1">
+                                                                            <i class="fas fa-trash "></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column-num py-2 ">
+                                                                        #
+                                                                    </td>
+                                                                    <td class="column8 py-2 ">
+                                                                        <p> الاسم</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p> البريد الاليكتروني</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p>
+                                                                            الحاله </p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p class="text-center"> اخر دخول</p>
+                                                                    </td>
+                                                                    <td class="column8  py-2">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column-num py-2 ">
+                                                                        1
+                                                                    </td>
+                                                                    <td class="column8 py-2 ">
+                                                                        <p id="username">ali</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p id="user-email"> example@example.com</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p id="status">
+                                                                            الحاله </p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p class="text-center"> اخر دخول</p>
+                                                                    </td>
+                                                                    <td class="column8  py-2 buttons">
+                                                                        <a href="" class=" edit-all px-1 mx-2">
+                                                                            <i class="fas fa-edit  "></i>
+                                                                        </a>
+                                                                        <a href="" class="remove-all px-1">
+                                                                            <i class="fas fa-trash "></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column-num py-2 ">
+                                                                        #
+                                                                    </td>
+                                                                    <td class="column8 py-2 ">
+                                                                        <p> الاسم</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p> البريد الاليكتروني</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p>
+                                                                            الحاله </p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p class="text-center"> اخر دخول</p>
+                                                                    </td>
+                                                                    <td class="column8  py-2">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column-num py-2 ">
+                                                                        1
+                                                                    </td>
+                                                                    <td class="column8 py-2 ">
+                                                                        <p id="username">ali</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p id="user-email"> example@example.com</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p id="status">
+                                                                            الحاله </p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p class="text-center"> اخر دخول</p>
+                                                                    </td>
+                                                                    <td class="column8  py-2 buttons">
+                                                                        <a href="" class=" edit-all px-1 mx-2">
+                                                                            <i class="fas fa-edit  "></i>
+                                                                        </a>
+                                                                        <a href="" class="remove-all px-1">
+                                                                            <i class="fas fa-trash "></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column-num py-2 ">
+                                                                        #
+                                                                    </td>
+                                                                    <td class="column8 py-2 ">
+                                                                        <p> الاسم</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p> البريد الاليكتروني</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p>
+                                                                            الحاله </p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p class="text-center"> اخر دخول</p>
+                                                                    </td>
+                                                                    <td class="column8  py-2">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column-num py-2 ">
+                                                                        1
+                                                                    </td>
+                                                                    <td class="column8 py-2 ">
+                                                                        <p id="username">ali</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p id="user-email"> example@example.com</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p id="status">
+                                                                            الحاله </p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p class="text-center"> اخر دخول</p>
+                                                                    </td>
+                                                                    <td class="column8  py-2 buttons">
+                                                                        <a href="" class=" edit-all px-1 mx-2">
+                                                                            <i class="fas fa-edit  "></i>
+                                                                        </a>
+                                                                        <a href="" class="remove-all px-1">
+                                                                            <i class="fas fa-trash "></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column-num py-2 ">
+                                                                        #
+                                                                    </td>
+                                                                    <td class="column8 py-2 ">
+                                                                        <p> الاسم</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p> البريد الاليكتروني</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p>
+                                                                            الحاله </p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p class="text-center"> اخر دخول</p>
+                                                                    </td>
+                                                                    <td class="column8  py-2">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column-num py-2 ">
+                                                                        1
+                                                                    </td>
+                                                                    <td class="column8 py-2 ">
+                                                                        <p id="username">ali</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p id="user-email"> example@example.com</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p id="status">
+                                                                            الحاله </p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p class="text-center"> اخر دخول</p>
+                                                                    </td>
+                                                                    <td class="column8  py-2 buttons">
+                                                                        <a href="" class=" edit-all px-1 mx-2">
+                                                                            <i class="fas fa-edit  "></i>
+                                                                        </a>
+                                                                        <a href="" class="remove-all px-1">
+                                                                            <i class="fas fa-trash "></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column-num py-2 ">
+                                                                        #
+                                                                    </td>
+                                                                    <td class="column8 py-2 ">
+                                                                        <p> الاسم</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p> البريد الاليكتروني</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p>
+                                                                            الحاله </p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p class="text-center"> اخر دخول</p>
+                                                                    </td>
+                                                                    <td class="column8  py-2">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="column-num py-2 ">
+                                                                        1
+                                                                    </td>
+                                                                    <td class="column8 py-2 ">
+                                                                        <p id="username">ali</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p id="user-email"> example@example.com</p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p id="status">
+                                                                            الحاله </p>
+                                                                    </td>
+                                                                    <td class="column8 py-2">
+                                                                        <p class="text-center"> اخر دخول</p>
+                                                                    </td>
+                                                                    <td class="column8  py-2 buttons">
+                                                                        <a href="" class=" edit-all px-1 mx-2">
+                                                                            <i class="fas fa-edit  "></i>
+                                                                        </a>
+                                                                        <a href="" class="remove-all px-1">
+                                                                            <i class="fas fa-trash "></i>
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <hr>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end user management -->
+                    </section>
+                    <!-- end contanet ariea -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Files -->
+    <script src="js\jquery-3.4.1.min.js"></script>
+    <script src="js\popper.min.js"></script>
+    <script src="js\bootstrap.min.js"></script>
+    <script src="js\main.js"></script>
+</body>
+
+</html>

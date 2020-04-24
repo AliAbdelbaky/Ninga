@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NINGA</title>
+    <link rel="icon" href="img\LOGO.png" type="image-png">
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\fontawesome.min.css">
+    <link rel="stylesheet" href="css\all.min.css">
+    <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body dir="rtl">
+    <div class="layout">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- start sidebar -->
+                    <section class="sidebar">
+                        <header>
+                            <img src="img\LOGO.png" alt="">
+                        </header>
+                        <hr>
+                        <ul>
+                            <span class="tap1">
+                                User management
+                                <i class="fa fa-angle-down i1"></i>
+                            </span>
+                            <div class="list1">
+                                <ul>
+                                    <!-- available for Superusers -->
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Manage Superusers</a></li>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Manage Supervisors</a></li>
+                                </ul>
+                            </div>
+                            <span class="tap2">
+                                Permissions
+                                <i class="fa fa-angle-down i2"></i>
+                            </span>
+                            <div class="list2">
+                                <ul>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">View user permissions</a></li>
+                                </ul>
+                            </div>
+                            <span class="tap3">
+                                Data Management
+                                <i class="fa fa-angle-down i3"></i>
+                            </span>
+                            <div class="list3">
+                                <ul>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Section Management</a></li>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Product Management</a></li>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Delivery Pilots Management</a></li>
+                                </ul>
+                            </div>
+                            <span class="tap4">
+                                Daily statistics
+                                <i class="fa fa-angle-down i4"></i>
+                            </span>
+                            <div class="list4">
+                                <ul>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">PILOTS</a></li>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">Orders</a></li>
+                                    <li><i class="fas fa-arrow-left"></i><a href="">New users</a></li>
+                                </ul>
+                            </div>
+                            <li style="padding: 0px;">
+                                <span>
+                                    Order management
+                                </span>
+                            </li>
+                            <li style="padding: 0px;">
+                                <span class="tap5">
+                                    Map Module
+                                </span>
+                            </li>
+                            <li class="active" style="padding: 0px;">
+                                <span class="tap7">
+                                    System Settings
+                                </span>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- end sidebar -->
+                </div>
+                <div class="col-md-9">
+                    <!-- start contanet ariea -->
+                    <section class="content-aria text-right">
+                        <!-- start dashNavBar -->
+                        <section class="Dnavbar">
+                            <div class="user">
+                                <a href=""> <img src="img\4.jpeg" alt="user-img"></a>
+                                <span class="username">علي عبد الباقي</span>
+                                <a href=""> <i class="fas fa-power-off"></i></a>
+                            </div>
+                        </section>
+                        <hr>
+                        <!-- end dashNavBar -->
+                        <!-- start systemSettings -->
+                        <section class="systemSettings text-right">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <section class="orderDownTime">
+                                            <h2>
+                                                Order Down Time
+                                            </h2>
+                                            <ul>
+                                                <li><button type="submit">start</button></li>
+                                                <li><button type="submit">stop</button></li>
+                                                <li><button class="tap8">Down Time message </button></li>
+                                                <li>
+                                                    <div style="display: none;" class="list8 text-center">
+                                                        <form action="">
+                                                            <div class="form-group">
+                                                                <textarea placeholder="اكتب رسالتك.."
+                                                                    class="form-control" name="" id="" cols="30"
+                                                                    rows="10"></textarea>
+                                                            </div>
+                                                            <button type="submit">save</button>
+                                                        </form>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="duration">
+                                                        <input type="time">
+                                                        <span>Expect Duration</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="duration">
+                                                        <input type="time">
+                                                        <span>Opening order time</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="duration">
+                                                        <input type="time">
+                                                        <span>Closing order time</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- end systemSettings -->
+                    </section>
+                    <!-- end contanet ariea -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Files -->
+    <script src="js\jquery-3.4.1.min.js"></script>
+    <script src="js\popper.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARdgI4DoPETbkWsGp4VA_wQqTZw3TpXvQ&callback=initMap"
+        async defer></script>
+    <script src="js\bootstrap.min.js"></script>
+    <script src="js\main.js"></script>
+</body>
+
+</html>
